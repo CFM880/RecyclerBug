@@ -1,0 +1,318 @@
+{
+  "update": 1,
+  "md5": "2986e3644e967e4d7b8645b231a25d50",
+  "ret": 1,
+  "msg": "ok",
+  "currVer": 200,
+  "from": "android",
+  "cate": {
+    "selected": 1,
+    "item": [
+      {
+        "name": "热门",
+        "cateid": "10000",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "aa1.png",
+        "activitytype": 1,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 0
+      },
+      {
+        "name": "完赛",
+        "cateid": "10002",
+        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490343516791&di=59b5c4587efcdefad0b0c4449bd807c5&imgtype=0&src=http%3A%2F%2Fr002.joyme.com%2Fr002%2Fimage%2F2012%2F07%2F95%2FD4D9B8BB30EA7F8827836BFD92D5FCD1.jpg",
+        "img_up": "aa.png",
+        "activitytype": 0,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 1
+      },
+      {
+        "name": "全部",
+        "cateid": "10001",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "quanbu.png",
+        "activitytype": 2,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 2
+      },
+      {
+        "name": "NBA",
+        "cateid": "9",
+        "img": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490343516791&di=59b5c4587efcdefad0b0c4449bd807c5&imgtype=0&src=http%3A%2F%2Fr002.joyme.com%2Fr002%2Fimage%2F2012%2F07%2F95%2FD4D9B8BB30EA7F8827836BFD92D5FCD1.jpg",
+        "img_up": "nba.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 3
+      },
+      {
+        "name": "国足",
+        "cateid": "23",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "zhongguozuqiu.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 4
+      },
+      {
+        "name": "国际足球",
+        "cateid": "22",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "guojizuqiu.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 5
+      },
+      {
+        "name": "英超",
+        "cateid": "3",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "yingchao.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 6
+      },
+      {
+        "name": "排球",
+        "cateid": "44",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "paiqiu_1.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 7
+      },
+      {
+        "name": "羽毛球",
+        "cateid": "45",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "yumaoqiu_1.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 0,
+        "weights": 8
+      },
+      {
+        "name": "网球",
+        "cateid": "35",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "wangqiu_1.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 9
+      },
+      {
+        "name": "中超",
+        "cateid": "18",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "zhongchao.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 10
+      },
+      {
+        "name": "CBA",
+        "cateid": "1",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "cba.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 11
+      },
+      {
+        "name": "亚冠",
+        "cateid": "15",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "yaguan.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 12
+      },
+      {
+        "name": "欧冠",
+        "cateid": "8",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "ouguan.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 13
+      },
+      {
+        "name": "西甲",
+        "cateid": "5",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "xijia.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 14
+      },
+      {
+        "name": "德甲",
+        "cateid": "2",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "dejia.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 15
+      },
+      {
+        "name": "意甲",
+        "cateid": "4",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "yijia.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 16
+      },
+      {
+        "name": "欧联杯",
+        "cateid": "12",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "oulianbei.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 17
+      },
+      {
+        "name": "中甲",
+        "cateid": "19",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "zhongjia.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 18
+      },
+      {
+        "name": "法甲",
+        "cateid": "11",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "fajia.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 19
+      },
+      {
+        "name": "台球",
+        "cateid": "36",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "taiqiu_1.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 20
+      },
+      {
+        "name": "乒乓球",
+        "cateid": "47",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "pingpangqiu_1.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 1,
+        "weights": 21
+      },
+      {
+        "name": "拳击",
+        "cateid": "41",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "quanji_1.png",
+        "activitytype": 4,
+        "data1": "1",
+        "data2": "1",
+        "default": 0,
+        "weights": 22
+      },
+      {
+        "name": "全部完赛",
+        "cateid": "10003",
+        "img": "http://t1.niutuku.com/960/35/35-82555.jpg",
+        "img_up": "",
+        "activitytype": -1,
+        "data1": "",
+        "data2": "",
+        "default": 0,
+        "weights": 23
+      }
+    ]
+  },
+  "main": {
+    "selected": 0,
+    "item": [
+      {
+        "cateid": 1,
+        "name": "主页",
+        "img_up": "aa.png",
+        "img_down": "bb.png",
+        "opentype": "5",
+        "data1": "http://www.baidu.com",
+        "data2": ""
+      },
+      {
+        "cateid": 2,
+        "name": "赛事",
+        "img_up": "aa.png",
+        "img_down": "bb.png",
+        "opentype": "5",
+        "data1": "http://www.baidu.com",
+        "data2": ""
+      },
+      {
+        "cateid": 3,
+        "name": "新闻",
+        "img_up": "aa.png",
+        "img_down": "bb.png",
+        "opentype": "5",
+        "data1": "http://www.baidu.com",
+        "data2": ""
+      },
+      {
+        "cateid": 4,
+        "name": "发现",
+        "img_up": "aa.png",
+        "img_down": "bb.png",
+        "opentype": "5",
+        "data1": "http://www.baidu.com",
+        "data2": ""
+      }
+    ]
+  }
+}
