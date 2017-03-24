@@ -85,10 +85,6 @@ public class CateActivity extends AppCompatActivity  implements OnStartDragListe
                 // 添加数据
                 List<Menu.CateBean.ItemBean> unselectedItems = cateUnselectedAdapter.getUnselectedItems();
                 itemBean.setDefaultX(0);
-                unselectedItems.add(0, itemBean);
-                cateUnselectedAdapter.setUnselectedItems(unselectedItems);
-                cateUnselectedAdapter.notifyItemInserted(0);
-                itemBean.setDefaultX(0);
                 int insertPostion = 0;
                 unselectedItems = cateUnselectedAdapter.getUnselectedItems();
                 if (unselectedItems.size() > 0){
