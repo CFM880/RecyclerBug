@@ -66,7 +66,7 @@ public class CateActivity extends AppCompatActivity  implements OnStartDragListe
         mAddedRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, OrientationHelper.VERTICAL));
 //        final GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
 //        mAddedRecyclerView.setLayoutManager(layoutManager);
-        RecyclerView mUnselectedRecyclerView = (RecyclerView) findViewById(R.id.unselected_recyclerview);
+        final RecyclerView mUnselectedRecyclerView = (RecyclerView) findViewById(R.id.unselected_recyclerview);
         mUnselectedRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, OrientationHelper.VERTICAL));
 
 
@@ -80,35 +80,37 @@ public class CateActivity extends AppCompatActivity  implements OnStartDragListe
                 Menu.CateBean.ItemBean itemBean = addedItems.get(position);
                 addedItems.remove(position);
                 cateAddedAdapter.setAddedItems(addedItems);
-                cateAddedAdapter.notifyItemRemoved(position);
+                mAddedRecyclerView.setAdapter(cateAddedAdapter);
 
                 // 添加数据
                 List<Menu.CateBean.ItemBean> unselectedItems = cateUnselectedAdapter.getUnselectedItems();
                 itemBean.setDefaultX(0);
-                int insertPostion = 0;
+                int insertPosition = 0;
                 unselectedItems = cateUnselectedAdapter.getUnselectedItems();
-                if (unselectedItems.size() > 0){
-                    if (itemBean.getWeights() < unselectedItems.get(0).getWeights()){
-                        insertPostion = 0;
-                        unselectedItems.add(0, itemBean);
-                    } else if (itemBean.getWeights() > unselectedItems.get(unselectedItems.size() - 1).getWeights()){
-                        unselectedItems.add(unselectedItems.size() - 1, itemBean);
-                        insertPostion = unselectedItems.size() - 1;
-                    } else {
-                        for (int i = 1; i < unselectedItems.size() - 1; i++) {
-                            if (itemBean.getWeights() > unselectedItems.get(i).getWeights() &&
-                                    itemBean.getWeights() < unselectedItems.get(i + 1).getWeights()){
-                                unselectedItems.add(i, itemBean);
-                                insertPostion = i;
-                                break;
-                            }
-                        }
-                    }
-                } else {
-                    unselectedItems.add(0, itemBean);
-                }
+//                if (unselectedItems.size() > 0){
+//                    if (itemBean.getWeights() < unselectedItems.get(0).getWeights()){
+//                        insertPosition = 0;
+//                        unselectedItems.add(0, itemBean);
+//                    } else if (itemBean.getWeights() > unselectedItems.get(unselectedItems.size() - 1).getWeights()){
+//                        unselectedItems.add(unselectedItems.size() - 1, itemBean);
+//                        insertPosition = unselectedItems.size() - 1;
+//                    } else {
+//                        for (int i = 1; i < unselectedItems.size() - 1; i++) {
+//                            if (itemBean.getWeights() > unselectedItems.get(i).getWeights() &&
+//                                    itemBean.getWeights() < unselectedItems.get(i + 1).getWeights()){
+//                                unselectedItems.add(i, itemBean);
+//                                insertPosition = i;
+//                                break;
+//                            }
+//                        }
+//                    }
+//                } else {
+//                    unselectedItems.add(0, itemBean);
+//                }
+                insertPosition = addItem2UnselectedCollection(itemBean);
                 cateUnselectedAdapter.setUnselectedItems(unselectedItems);
-                cateUnselectedAdapter.notifyItemInserted(insertPostion);
+//                mUnselectedRecyclerView.setAdapter(cateUnselectedAdapter);
+                cateUnselectedAdapter.notifyItemInserted(insertPosition);
                 addedItems = null;
                 unselectedItems = null;
                 itemBean = null;
@@ -184,5 +186,20 @@ public class CateActivity extends AppCompatActivity  implements OnStartDragListe
     @Override
     public void onStartDrag(RecyclerView.ViewHolder viewHolder) {
         mItemTouchHelper.startDrag(viewHolder);
+    }
+
+    private int addItem2UnselectedCollection(Menu.CateBean.ItemBean item){
+        int i = 0, l = unselectedItems.size();
+        for (;i<l;){
+            Menu.CateBean.ItemBean tmpItem = unselectedItems.get(i);
+
+            if (item.getWeights() < tmpItem.getWeights()){
+                unselectedItems.add(i, item);
+                return i;
+            }
+            i += 1;
+        }
+        unselectedItems.add(item);
+        return l;
     }
 }
